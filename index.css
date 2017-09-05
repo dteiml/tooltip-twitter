@@ -1,0 +1,45 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+  font-family: 'BalooTammudu';
+  src: url(BalooTammudu-Regular.ttf) format('truetype');
+}
+
+.tooltip--share {
+	display: none;
+  position: absolute;
+  background-color: #2E2E2C;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 80px;
+}
+
+.tooltip--share:after {
+  content: "";
+  box-sizing: border-box;
+  display: block; 
+  position: absolute;
+  left: calc(50% - 3px);
+  bottom: -3px;
+  width: 0;
+  border-width: 3px 3px 0; 
+  border-style: solid;
+  border-color: #2E2E2C transparent;
+}
+
+.share--twitter {
+  font-size: 14px;
+  font-family: BalooTammudu;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+	text-decoration: none;
+  align-items: center;
+}
+
+.text--twitter {
+	margin-bottom: -5px;
+}
